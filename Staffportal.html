@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+
+<title>StaffPortal</title>
+
+<style>
+  html  , body{
+    font-size: 15px;
+    line-height:1.5;
+    box-sizing: border-box;
+    margin: 0;
+    top: 0;
+    left: 0;
+   }
+   
+   a {
+       text-decoration: none;
+       color: rgba(1, 2, 2, 0.7);
+       font-weight: 500;
+       font-size: 18px;
+   }
+   
+   a:hover{
+       color:hsl(240, 91%, 48%);
+   }
+   
+   ul{
+       list-style: none;
+       color: black;
+       
+   }
+   
+   .navbar{
+    background-color: white;
+    padding: 3rem 2rem ;
+    height: 0rem;
+    min-height: 12vh;
+   
+}
+
+.nav-item{
+    text-align: center;
+  
+}
+
+.navbar .navbar-brand a{
+    padding: 1rem 0;
+    display: block;
+    text-decoration: none;
+}
+
+
+.nav-link{
+    color: black;
+    
+
+    
+    }
+
+
+
+   
+   .navbar-toggler{
+       background-color: rgb(73, 147, 207);
+       border: none;
+       padding: 10px 6px;
+       outline: none;
+   }
+   
+   #fontstyle{
+       font-family: 'Playfair Display', serif;
+   }
+   
+   
+   .navbar-toggler span{
+       display: block;
+       width: 22px;
+       height: 2px;
+       border: 1px;
+       background: white;
+   }
+   
+   
+   .navbar-toggler span + span{
+       margin-top: 4px;
+       width: 18px;
+       margin-left: 4px;
+   }
+   
+   .navbar-toggler span + span +span {
+       width: 10px;
+       margin-left: 10px;
+   }
+   
+   .dropdown-menu{
+   
+       background-color: white;
+       color: rgb(0, 0, 0);
+   }
+   </style>
+
+    
+  </head>
+  <body>
+    
+    <header class="header">
+          
+        <nav class="navbar navbar-expand-lg  header-nav fixed-top ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+              <img src="/images/logo.png"  class="rounded" width="90" height="50"></a>
+              <a class="navbar-brand" id="fontstyle" href="index.html"><img> HTU</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span ></span>
+                <span></span>
+                <span></span>
+              </button>
+              
+              <div class="collapse navbar-collapse justify-content-between "  id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0 ">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+               
+               
+                  <li class="nav-item">
+                    <a class="nav-link" href="onlinecourses.html">Online Courses</a>
+                  </li>
+
+            
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Portals
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="Studentportal.html">Student Portal</a></li>
+                      <li><a class="dropdown-item" href="TeacherPortal.html">Teacher Portal</a></li>
+                      <li><a class="dropdown-item" href="Staffportal.html">Staff Portal</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="Shop.html">News</a>
+                  </li>
+
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="aboutus.html">About us</a>
+                    </li>
+            
+                     
+
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact us</a>
+                  </li>
+                
+                </ul>
+                <ul class="navbar-nav  ml-auto ">
+                  <a href="apply.html" class="btn btn-primary" >Apply Now! </a>
+                </ul>
+            
+              </div>
+            </div>
+          </nav>
+
+      </header>
+      
+    <section class="portal py-5 bg-light">
+        <div class="container">
+          <div class="row g-0">
+             <div class="col-lg-5">
+                <img src="/images/logo.png" class="img-fluid" width = "2000px" height="100px" alt="Donate" >
+             </div>
+          <div class="col-lg-7 text-center py-5">
+              <h1 class="animate__animated animate__heartBeat animate__infinite"> Staff Portal </h1>
+          
+         <form >
+
+              <div class="form-row py-3 pt-5">
+                   <div class="offset-1 col-lg-10">
+                        <input type="text" class="inp px-3" placeholder="Email">
+                   </div>
+              </div>
+
+                   <div class="form-row py-3 pt-3">
+                    <div class="offset-1 col-lg-10">
+                         <input type="password" class="inp px-3"  placeholder="Password">
+                    </div>   
+               </div>
+
+              
+
+               <div class="form-row py-3 pt-3 ">
+                <div class="offset-1 col-lg-10">
+                 <a class="btn1" href="staffdashboard.html"> Sign In </a>
+                  </div>
+           </div>
+
+                    
+                    </div>
+
+
+
+    
+</body>
+</html>

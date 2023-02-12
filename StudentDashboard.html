@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ <!-- JavaScript Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ 
+ <link rel="stylesheet" href="StudentStyle.css">
+    <link rel="icon" type="image/png" href="/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Dashboard</title>
+<style>
+    html  , body{
+      font-size: 15px;
+      line-height:1.5;
+      box-sizing: border-box;
+      margin: 0;
+      top: 0;
+      left: 0;
+     }
+     
+  
+     a {
+      text-decoration: none;
+      color: rgba(1, 2, 2, 0.7);
+      font-weight: 500;
+      font-size: 18px;
+  }
+  
+  a:hover{
+      color:hsl(240, 91%, 48%);
+  }
+  
+  ul{
+      list-style: none;
+      color: black;
+      
+  }
+  
+  .navbar{
+   background-color: white;
+   padding: 3rem 2rem ;
+   height: 0rem;
+   min-height: 12vh;
+  
+  }
+  
+  .navbar .navbar-brand a{
+      padding: 1rem 0;
+      display: block;
+      text-decoration: none;
+  }
+  
+  #fontstyle{
+      font-family: 'Playfair Display', serif;
+  }
+  
+  .btn {
+      height: 30px;
+      width: 100px;
+  }
+  </style>
+</head>
+<body>
+  
+<div class="container-fluid" style="padding-bottom: 100px;">
+  <header class="header ">
+          
+    <nav class="navbar navbar-expand-lg  header-nav fixed-top ">
+        <div class="container-fluid">
+
+          <a class="navbar-brand" id="fontstyle" href="index.html"><img> HTU</a>
+
+     
+          <img src="/images/logo.png"  class="rounded" width="90" height="50"></a>
+          
+           
+          <button  class="btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#StudentDashboard">
+            <p style="color: white;"> Username</p>
+        </button>   
+
+        </div>
+    </nav>
+  </header>
+</div>
+    
+    <!-- Offcanvas Sidebar -->
+<div class="offcanvas offcanvas-end" id="StudentDashboard">
+<div style="background-color: rgb(170, 245, 255);" class="offcanvas-header">
+<h1  class="offcanvas-title">Settings</h1>
+<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+</div>
+<div style="background-color: rgb(184, 229, 250);" class="offcanvas-body">
+ <a href="StudentDashboard.html">
+   <p>Dashboard</p>
+ </a>
+
+ <a href="AddCourses.html">
+  <p>Courses</p>
+</a>
+
+<a href="Grades.html">
+  <p>Grades</p>
+</a>
+
+
+<a href="Assignments.html">
+  <p>Assignments</p>
+</a>
+
+
+<a href="Exams.html">
+  <p>Exams</p>
+</a>
+
+
+
+ 
+<a href="Studentportal.html">
+  <p>Log out</p>
+</a>
+
+</div>
+
+</div>
+</div>
+
+
+
+<div  class="alert alert-info alert-dismissible text-center ">
+  <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  <strong>Success!</strong> You are logged in as UserName.
+</div>  
+
+
+
+
+<div style="background-color: aliceblue;"> 
+
+    <div class="card-body p-3">
+    <div  class="container-fluid ">
+      <h4> Courses Overview:  </h4>
+      <div class="row" >
+        <div class="col-sm-3">
+    <div class="card">
+      <img class="card-img-top" style="height:150px;" src="/images/logo.png" alt="High Tech Logo">
+      <div class="card-body">
+        <h6 class="card-title">Add courses </h6>
+        <p class="card-text"> Click on the button below.</p>
+        <a href="AddCourses.html" class="btn btn-info">Add </a>
+      </div>
+    </div>
+        </div>
+
+              <div class="col-sm-3">
+                <div class="card" >
+                  <img class="card-img-top"  style="height:150px;" src="/images/Course1.jpg"    alt="Web development">
+                  <div class="card-body">
+                    <h6 class="card-title"><u>License :</u>Web development </h6>
+                    <p class="card-text">  Html/CSS.</p>
+                    <a href="Onlinecourse.html" class="btn btn-info">View </a>
+                  </div>
+                </div>
+                    </div>
+                    
+              <div class="col-sm-3">
+                <div class="card" >
+                  <img class="card-img-top"  style="height:150px;" src="/images/Course2.jpg"    alt="Card image">
+                  <div class="card-body">
+                    <h6 class="card-title"><u>License:</u>Programming 2</h6>
+                    <p class="card-text">  Python.</p>
+                    <a href="#" class="btn btn-info">View</a>
+                  </div>
+                </div>
+                    </div>
+                    
+              <div class="col-sm-3">
+                <div class="card" >
+                  <img class="card-img-top" style="height:150px;" src="/images/Course3.png"    alt="Card image">
+                  <div class="card-body">
+                    <h6 class="card-title"><u>License:</u>Data Structure</h6>
+                    <p class="card-text"> With C.</p>
+                    <a href="#" class="btn btn-info">View</a>
+                  </div>
+                </div>
+                    </div>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="card-body p-3">
+      <div  class="container-fluid ">
+        
+        <div class="row" >
+          <div class="col-sm-3">
+      <div class="card">
+        <img class="card-img-top" style="height:150px;" src="/images/AccCourse.png" alt="High Tech Logo">
+        <div class="card-body">
+          <h6 class="card-title"><u>License:</u> Accounting </h6>
+          <p class="card-text"> Basics</p>
+          <a href="#" class="btn btn-info">Add </a>
+        </div>
+      </div>
+          </div>
+  
+                <div class="col-sm-3">
+                  <div class="card" >
+                    <img class="card-img-top"  style="height:150px;" src="/images/AutocadCourse.png"    alt="Web development">
+                    <div class="card-body">
+                      <h6 class="card-title"><u>License:</u> AutoCad</h6>
+                      <p class="card-text"> AC 2020.</p>
+                      <a href="#" class="btn btn-info">View </a>
+                    </div>
+                  </div>
+                      </div>
+                      
+                <div class="col-sm-3">
+                  <div class="card" >
+                    <img class="card-img-top"  style="height:150px;" src="/images/PScourse.png"    alt="Card image">
+                    <div class="card-body">
+                      <h6 class="card-title"><u>License:</u>Photoshop</h6>
+                      <p class="card-text"> PS 22.2.1</p>
+                      <a href="#" class="btn btn-info">View</a>
+                    </div>
+                  </div>
+                      </div>
+
+                      <div class="col-sm-3">
+                        <div class="card" >
+                          <img class="card-img-top"  style="height:150px;" src="/images/CalcCourse.png"    alt="Card image">
+                          <div class="card-body">
+                            <h6 class="card-title"><u>License:</u>Calculus</h6>
+                            <p class="card-text"> Math 1</p>
+                            <a href="#" class="btn btn-info">View</a>
+                          </div>
+                        </div>
+                            </div>
+              
+        </div>
+      </div>
+      </div>
+</div>
+   
+<div class="container-fluid text-center p-3" style="background-color: aliceblue;">
+  <h1 class="p-3"> <u>Calender:</u> </h1>
+   <div class="row">
+
+   <div class="col-sm-12">
+    <h3  style="color: rgb(94, 191, 255);"> Assignments</h3>
+    
+    <table class="table table-hover">
+      <thead>
+
+        <th> Assignments:</th>
+        <th> Deadline</th>
+        <th> Course Name</th>
+      </thead>
+
+        <tr>
+<td> <a href="Assignmentdetails.html" target="_blank"> <b>Assignment 1:</b> </a></td>
+<td> 28, Friday, January, 2022 at 6:00 p.m.    </td>
+<td> Programming2</td>
+        </tr>
+
+        <tr>
+          <td> <b>Assignment 2:</b> </td>
+          <td> Not posted yet  </td>
+          <td>Database</td>
+                  </tr>
+                  </tbody>
+    </table>
+
+                </div>
+
+               
+</div>
+
+                <div class="row">
+                  <h3  style="color: rgb(94, 191, 255);"> Quizzes</h3>
+  <table class="table table-hover">
+    <thead>
+
+      <th> Quizzes :</th>
+      <th> Date</th>
+      <th> Course Name</th>
+    </thead>
+
+      <tr>
+<td> <a href="https://forms.gle/LbBjDmQrrqqwRzZEA" target="_blank"> <b>Quiz 1:</b> </a></td>
+<td> 27, Thursday, January, 2022 at 6:00 p.m.    </td>
+<td>Web development</td>
+      </tr>
+
+      <tr>
+        <td> <b>Quiz 2:</b> </td>
+        <td> Not posted yet  </td>
+        <td> AutoCad</td>
+                </tr>
+                </tbody>
+  </table>
+
+</div>
+</div>
+</div>
+<div class="col-sm-12">
+
+<div style="background-color: rgb(102, 184, 255);">
+  <div id="demi1" class="carousel slide" data-bs-ride="carousel">
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+             
+             
+    <div class="carousel-item active">
+    <div class="card-body p-3">
+        <div  class="container-fluid ">
+            <div class="text-center">
+          <a href="Exams.html" style="font-family: 'Oswald', sans-serif; font-size: 20px;color: black;"> <b>Your Quizzes: </b> </a></div>
+          <div class="row" >
+            
+              <div class="col-sm-3">
+                <div class="card" >
+                  <img class="card-img-top"  style="height:150px;" src="/images/Quiz1.jpg"    alt="QUIZ">
+                  <div class="card-body">
+                    <h6 class="card-title"><u> Quiz :</u>Web development </h6>
+                  <div class="text-center">
+                      <p class="card-text"> 31-Monday, January, 2022 at 6:00  p.m. </p>
+                 
+                  
+                    <button type="button" class="btn btn-info mt-2" data-bs-toggle="modal" data-bs-target="#myModal88">
+                      View
+                     </button>
+                     
+                     <!-- The Modal -->
+                     <div class="modal" id="myModal88">
+                       <div class="modal-dialog">
+                         <div class="modal-content">
+                     
+                           <!-- Modal Header -->
+                         
+                           <div class="modal-header ">
+                             <h4 class="modal-title text-center">Quiz Information</h4>
+                             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                           </div>
+                    
+                           <!-- Modal body -->
+                           <div class="modal-body">
+                            Start Time: 6:00 p.m.<br>
+                            End Time: 7:00 p.m. <br>
+                            Duration: 1:00 hour.<br>
+                            Nb Of Questions: 20.<br>
+                           </div>
+                     
+                           <!-- Modal footer -->
+                           <div class="modal-footer text-center">
+                              <a href="https://forms.gle/LbBjDmQrrqqwRzZEA" class="btn btn-primary " target="_blank" >Start</a>
+                           </div>
+                       </div>
+                         </div></div>
+                  </div>
+                </div>
+                    </div>
+              </div>
+          
+                    <div class="col-sm-3">
+                      <div class="card" >
+                        <img class="card-img-top"  style="height:150px;" src="/images/Quiz1.jpg"    alt="Quiz">
+                        <div class="card-body">
+                          <h6 class="card-title"><u>Quiz:</u>Database fundamental</h6>
+                          <div class="text-center">
+                              <p class="card-text"> 01-Tuesday,February,2022 at 6:30 p.m. </p>
+                              <button type="button" class="btn btn-info mt-2" data-bs-toggle="modal" data-bs-target="#myModal99">
+                                  View
+                                 </button>
+                                 
+                                 <!-- The Modal -->
+                                 <div class="modal" id="myModal99">
+                                   <div class="modal-dialog">
+                                     <div class="modal-content">
+                                 
+                                       <!-- Modal Header -->
+                                     
+                                       <div class="modal-header ">
+                                         <h4 class="modal-title text-center">Quiz Information</h4>
+                                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                       </div>
+                                
+                                       <!-- Modal body -->
+                                       <div class="modal-body">
+                                        Start Time: 6:00 p.m.<br>
+                                        End Time: 7:00 p.m. <br>
+                                        Duration: 1:00 hour.<br>
+                                        Nb Of Questions: 20.<br>
+                                       </div>
+                                 
+                                       <!-- Modal footer -->
+                                       <div class="modal-footer text-center">
+                                          <button type="button" class="btn btn-secondary " data-bs-dismiss="modal" disabled>Start</button>
+                                       </div>
+                                   </div>
+                                     </div></div> </div>
+                        </div>
+                      </div>
+                          </div>
+  
+  
+  
+          </div>
+        </div>
+    </div></div>
+    
+          
+             
+           
+  
+  
+  
+  
+    <!-- Left and right controls/icons -->
+    <button style="width: 20px; background-color: lightblue;" class="carousel-control-prev" type="button" data-bs-target="#demi1" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button style="width: 20px; background-color: lightblue;"class="carousel-control-next" type="button" data-bs-target="#demi1" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+     </div>
+</div>
+ 
+
+
+<div style="background-color: aliceblue;">
+  <div id="demi77" class="carousel slide" data-bs-ride="carousel">
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+             
+             
+    <div class="carousel-item active">
+    <div class="card-body p-3">
+        <div  class="container-fluid ">
+            <div class="text-center">
+              <a href="Assignments.html" style="font-family: 'Oswald', sans-serif; font-size: 20px;color: black;"> <b>Your Assignmnets: </b> </a></div>
+              <div class="row" >
+            
+              <div class="col-sm-3">
+                <div class="card" >
+                  <img class="card-img-top"  style="height:150px;" src="/images/Assignment1.png"    alt="Assignments">
+                  <div class="card-body">
+                    <h6 class="card-title"><u> Quiz :</u>Web development </h6>
+                  <div class="text-center">
+                    <a href="Assignmentdetails.html" target="_blank" class="btn btn-info mt-2 text-center" >View </a></div>
+                  </div>
+                </div>
+                    </div>
+  
+          
+                    <div class="col-sm-3">
+                      <div class="card" >
+                        <img class="card-img-top"  style="height:150px;" src="/images/Assignment1.png"    alt="Assignments">
+                        <div class="card-body">
+                          <h6 class="card-title"><u>Assignment:</u>Database</h6>
+                          <div class="text-center">
+                          <a href="#" class="btn btn-info mt-2 text-center">View</a></div>
+                        </div>
+                      </div>
+                          </div>
+  
+                          <div class="col-sm-3">
+                            <div class="card" >
+                              <img class="card-img-top" style="height:150px;" src="/images/Assignment1.png"    alt="Assignments">
+                              <div class="card-body">
+                                <h6 class="card-title"><u>Assignment:</u>Data Structure</h6>
+                                <div class="text-center">
+                                  <a href="#" class="btn btn-info mt-2 text-center">View</a></div>
+                              </div>
+                            </div>
+                                </div>
+
+                                </div>
+        </div>
+    </div>
+    </div>
+  </div>
+      <!-- Left and right controls/icons -->
+      <button style="width: 20px; background-color: lightblue;" class="carousel-control-prev" type="button" data-bs-target="#demi77" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button style="width: 20px; background-color: lightblue;"class="carousel-control-next" type="button" data-bs-target="#demi77" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+       </div>
+   
+       <div class="container-fluid " style="display: flex; align-items: center; justify-content: center; background-color: aliceblue;">
+        <div style="flex-basis: 50%;" class="img-col">
+    <img style="max-width: 100%; height: 300px;" src="/images/Attendance.png" class = " img-responsive"  alt = "Assignment">
+    
+        </div>
+    <div style="flex-basis: 50%;" class="text-col">
+    <p style="display: inline; margin-left:90px; font-size:50px; font-family: 'Bebas Neue', cursive;">Your Progress </p>
+    <h1 style="margin-left: 150px;">Attendance</h1>
+    <h1 style="margin-left: 150px;">120 Hours</h1>
+    
+    </div>
+    </div>
+   
+
+</body>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start  text-muted" style="background-color: rgb(208, 246, 255);">
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-3">
+      <!-- Grid row -->
+      <div class="row mt-1">
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mb-1">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-1 mt-5">
+            <i class="fas fa-gem me-3"></i>High Tech University
+          </h6>
+          <p class="mt-3">
+            The high Tech University is the university with the longest tradition.
+             Here you can have the best way to success. 
+          </p>
+        </div>
+       
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-1">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-1 mt-5">
+            Useful links
+          </h6>
+          <p>
+            <a href="index.html" class="text-reset">  <p style="font-size: 10px;">Home</p></a>
+          </p>
+          <p>
+            <a href="aboutus.html" class="text-reset"> <p style="font-size: 10px;">Aboutus</p></a>
+          </p>
+          <p>
+            <a href="Studentportal.html" class="text-reset"> <p style="font-size: 10px;">Student Portal</p></a>
+          </p>
+          
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-1 ">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4 mt-5">
+            Contact Us
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Shanghai, China 10012</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            HighTechUni@net.edu.ch
+          </p>
+          <p><i class="fas fa-phone me-3"></i> 011 86 14 6786 8765</p>
+          <p><i class="fas fa-print me-3"></i> 011 86 16 7634 9873</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="index.html">High Tech University</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+
+
+      <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<link rel="icon" type="image/png" href="/images/logo.png">
+
+<link rel="stylesheet" type="text/css" href="application.css">
+<title>Application </title>
+ 
+</head>
+<body>
+
+    <div class="container-fluid p-5 bg-info text-white text-center">
+        <h1 >Application Form</h1>
+        <p>Please fill this application form in order to join us as a student in this university!</p> 
+        <a href="index.html">
+        <img  src="images/logo.png" alt="High Tech Uni" height="150px">
+      </a>
+      </div>
+
+
+
+
+      <!-- Form 3 -->
+
+<div style="background-color: aliceblue;" class="form-3-container section-container section-container-">
+  <div class="container">
+    
+      <div class="row">
+          <div class="col-md-10 offset-md-1 form-3-box text-center wow fadeInUp">
+
+              <form action="" method="post">
+
+                  <!-- Current Occupation  -->
+                  <fieldset class="form-group p-3">
+                      <legend class="w-auto px-2"><b>Personal Information</b></legend>
+                      <div class="form-group text-left p-3">
+                          <label for="FirstName">First Name:</label>
+                          <input type="text" class="form-control FirstName" id="FirstName" placeholder="First Name.." name="FirstName" required>
+                      </div>
+                      <div class="form-group text-left p-3">
+                          <label for="MiddleName">Middle Name:</label>
+                          <input type="text" class="form-control MiddleName" id="MiddleName" placeholder="Middle Name ..." name="MiddleName" required>
+                      </div>
+                      <div class="form-group text-left p-3">
+                          <label for="LastName">Last Name:</label>
+                          <input type="text" class="form-control LastName" id="LastName" placeholder="Last Name..." name="LastName" required>
+                      </div>
+   
+                                <div class="form-group text-left p-3">
+                             <label for="birthday">Birthday:</label>
+                               <div>
+                             <input type="date" id="birthday" name="birthday" required> 
+                                </div>
+                                   </div>  
+
+                                   <div class="form-group text-left p-3">
+                       <label class="text-center"> Gender</label>
+                      <div class="form-group ">
+                        <div class="form-check form-check-inline" >
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
+                          <label class="form-check-label" for="inlineRadio1">Female</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required>
+                          <label class="form-check-label" for="inlineRadio2">Male</label>
+                        </div>
+                    </div>
+                                   </div>
+
+                                   <div class="form-group text-left p-3">
+                                    <label class="text-center"> Nationality: </label>
+                                      <select class="form-select" required>
+                                        <option value="1" disabled selected >Select your nationality</option>
+                                        <option value="2" >Lebanese </option>
+                                        <option value="3">German </option>
+                                        <option value="4">French </option>
+                                        <option value="5">Egyptian </option>
+                                        <option value="6">Japanese </option>
+                                        <option value="7">Kuwaiti </option>
+                                        <option value="8">Syrian </option>
+                                        <option value="9">UK, British
+                                        </option>
+                                        <option value="10">United States, U.S., American
+                                        </option>
+                                        <option value="11">Palestinian </option>
+                                      </select>
+                                   
+                                </div>
+             
+          
+
+                  </fieldset>
+
+
+
+
+                  <!-- Your Address  -->
+                  <fieldset class="form-group p-3">
+                      <legend class="w-auto px-2"><b>Your Address</b></legend>
+                      <div class="form-group text-left p-3">
+                          <label for="address">Address:</label>
+                          <input type="text" class="form-control address" id="address" placeholder="Address..." name="address" required>
+                      </div>
+                      <div class="form-group text-left p-3">
+                          <label for="zip-code">ZIP code:</label>
+                          <input type="text" class="form-control zip-code" id="zip-code" placeholder="ZIP code..." name="zip-code" required>
+                      </div>
+                      <div class="form-group text-left p-3">
+                          <label for="city">City:</label>
+                          <input type="text" class="form-control city" id="city" placeholder="City..." name="city" required>
+                      </div>
+                      <div class="form-group text-left p-3">
+                          <label for="state">State:</label>
+                          <input type="text" class="form-control state" id="state" placeholder="State..." name="state" required>
+                      </div>
+                  </fieldset>
+                     
+                  <!-- Contact u-->
+
+                  <fieldset class="form-group p-3">
+                    <legend class="w-auto px-2"><b> Contact You</b></legend>
+                  <div class="form-group text-left p-3">
+                    <label for="exampleInputEmail1">Email address:</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+
+                  <div class="form-group text-left p-3">
+                    <label for="Phonenumbner">Phone Number:</label>
+                    <input type="email" class="form-control" id="Phonenumber" aria-describedby="PhonenumberHelp" placeholder="00961000000000" required>
+                    <small id="PhonenumberHelp" class="form-text text-muted">Please enter your phone country code too.</small>
+                  </div>
+
+
+                  <!-- Educational Background  -->
+                  <fieldset class="form-group p-3">
+                      <legend class="w-auto px-2"><b> Educational Background </b></legend>
+
+                      <div class="form-group text-left p-3">
+                        <label for="SchoolName">Scool Name:</label>
+                        <input type="text" class="form-control address" id="SchoolName" placeholder="School Name..." name="SchoolName" required>
+                    </div>
+
+                    
+                    <div class="form-group text-left p-3">
+                      <label for="SchoolAddress">Scool Address:</label>
+                      <input type="text" class="form-control address" id="SchoolAddress" placeholder="School Address..." name="SchoolAddress" required>
+                  </div>
+
+                  <div class="form-group text-left p-3">
+                    <label class="text-center"> Certificate Type: </label>
+                      <select class="form-select">
+                        <option value="1" disabled selected >Select your certificate type: </option>
+                        <option value="2" >Lebanese Official Baccalaureate certificate  </option>
+                        <option value="3">Equivalent to lebanese official Baccalaureate certificate </option>
+                        <option value="4">Technical official certificate </option>
+                        
+                      </select>
+                  </div>
+                      <div class="form-group text-left p-4">
+                        <label for="Dateofthecertificate">Date of the Certificate: </label>
+                      <input type="number" id="Dateofthecertificate" min="1970" max="2021" step="1" value="0000" required>
+                   
+                </div>
+
+               
+                  </fieldset>
+
+
+
+                  <!-- -->
+
+                  <fieldset class="form-group p-3">
+                    <legend class="w-auto px-2"><b> Future Education</b></legend>
+
+                      <div class="form-group text-left p-3">
+                        <label class="text-center"> Degree Type: </label>
+                          <select class="form-select" required>
+                            <option value="1" disabled selected >Select your Degree: </option>
+                            <option value="2" >License  </option>
+                            <option value="3" disabled>Master </option>
+                            <option value="4" disabled>PHD </option>
+                            
+                          </select>
+                      </div>
+
+                      <div class="form-group text-left p-3">
+                        <label class="text-center"> Domain Type: </label>
+                          <select class="form-select" required>
+                            <option value="1" disabled selected >Select your Domain: </option>
+                            <option value="2" > Web development  </option>
+                            <option value="3">Artificial intelligence </option>
+                            <option value="4">Networking </option>
+                            <option value="4">Machine learning </option>
+                            <option value="4">Mobile Application development </option>
+                            <option value="4">Cyber Security </option>
+                            
+                          </select>
+                      </div>
+
+
+                      <!-- Appendix-->
+                      <fieldset class="form-group p-3">
+                        <legend class="w-auto px-2"><b> Appendix  </b></legend>
+
+
+                      <div  class="form-group text-center p-3">
+                      <form METHOD="post" ACTION="mailto:joumanamakki24@gmail.com" ENCTYPE="multipart/form-data" >
+                       
+                      <div class="text-center">
+                          <p> Please place Your file here as a zipped file that includes: </p>
+                        
+                          
+
+                        <ul >
+                          1. Your identity <br>
+                          2.Your certifications
+                        </ul>
+</div>
+                         <input class="btn btn-info" type="file" NAME="attachedfile"  >
+                         </button>
+                         </div>
+                        
+                        </form>
+
+
+                        <div class="form-group text-center p-5">
+                         <div class="form-group ">
+                           <div class="form-check form-check-inline" >
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                          <label class="form-check-label" for="flexCheckDefault">
+                            I accept all the terms and conditions of the university.
+                          </label>
+                        </div>
+                           </div>
+
+                     
+   </fieldset>
+                  <!-- Submit Button  -->
+                  <div class="form-group row mt-1">
+                      <div class="col text-center">
+                          <button type="reset" class="btn btn-primary" onclick="alert('Thank you for your registration!')">Send Application</button>
+                      </div>
+                  </div>
+              </form>
+
+          </div>
+      </div>
+  </div>
+</div>
+<div class="text-center"> 
+  <a href="#"  >
+      <img src="/images/up.png" style="width: 20px;">
+    </a></div>
+
+<div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.05);">
+  © 2022 Copyright:
+  <a class="text-reset fw-bold" href="index.html">High Tech University</a>
+</div>
+
+
+</body>
+</html>

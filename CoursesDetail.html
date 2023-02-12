@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ <!-- JavaScript Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ 
+ 
+ <link rel="stylesheet" href="StudentStyle.css">
+    <link rel="icon" type="image/png" href="/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+
+    html  , body{
+      font-size: 15px;
+      line-height:1.5;
+      box-sizing: border-box;
+      margin: 0;
+      top: 0;
+      left: 0;
+     }
+     
+  
+     a {
+      text-decoration: none;
+      color: rgba(1, 2, 2, 0.7);
+      font-weight: 500;
+      font-size: 18px;
+  }
+  
+  a:hover{
+      color:hsl(240, 91%, 48%);
+  }
+  
+  ul{
+      list-style: none;
+      color: black;
+      
+  }
+  
+  .navbar{
+   background-color: white;
+   padding: 3rem 2rem ;
+   height: 0rem;
+   min-height: 12vh;
+  
+  }
+  
+  .navbar .navbar-brand a{
+      padding: 1rem 0;
+      display: block;
+      text-decoration: none;
+  }
+  
+  #fontstyle{
+      font-family: 'Playfair Display', serif;
+  }
+  
+  .btn {
+      height: 30px;
+      width: 100px;
+  }
+  
+.fa {
+  font-size: 20px;
+}
+
+.checked {
+  color: rgb(255, 174, 0);
+}
+
+</style>
+    <title>Course Detail</title>
+</head>
+<body>
+  
+<div class="container-fluid" style="padding-bottom: 100px;">
+  <header class="header ">
+          
+    <nav class="navbar navbar-expand-lg  header-nav fixed-top ">
+        <div class="container-fluid">
+
+          <a class="navbar-brand" id="fontstyle" href="index.html"><img> HTU</a>
+
+     
+          <img src="/images/logo.png"  class="rounded" width="90" height="50"></a>
+          
+           
+          <button  class="btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#StudentDashboard">
+            <p style="color: white;"> Username</p>
+        </button>   
+
+        </div>
+    </nav>
+  </header>
+</div>
+    
+    <!-- Offcanvas Sidebar -->
+<div class="offcanvas offcanvas-end" id="StudentDashboard">
+<div style="background-color: rgb(170, 245, 255);" class="offcanvas-header">
+<h1  class="offcanvas-title">Settings</h1>
+<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+</div>
+<div style="background-color: rgb(184, 229, 250);" class="offcanvas-body">
+ <a href="StudentDashboard.html">
+   <p>Dashboard</p>
+ </a>
+
+ <a href="AddCourses.html">
+  <p>Courses</p>
+</a>
+
+<a href="Grades.html">
+  <p>Grades</p>
+</a>
+
+
+<a href="Assignments.html">
+  <p>Assignments</p>
+</a>
+
+
+
+
+
+
+
+ 
+<a href="Studentportal.html">
+  <p>Log out</p>
+</a>
+
+</div>
+
+</div>
+</div>
+
+
+<div class="container-fluid " style="display: flex; align-items: center; justify-content: center; background-color: aliceblue;">
+    <div style="flex-basis: 50%;" class="img-col">
+<img style="max-width: 100%; height: 300px;" src="/images/Course2.jpg" class = " img-responsive"  alt = "Assignment">
+
+    </div>
+<div style="flex-basis: 50%;" class="text-col">
+<p style="display: inline; margin-left:90px; font-size:50px; font-family: 'Bebas Neue', cursive;">Programming2 </p>
+<h1 style="margin-left: 150px;">Python</h1>
+    <p style="margin-left: 150px;">SlCS343-2021/2022</p>
+</div>
+</div>
+ 
+
+<div class="container-fluid p-5 mt-2  text-center text-dark" style="background-color: aliceblue">
+  <h3 style="background-color: rgb(82, 186, 255);"> Course Information</h3>
+  <table class="table table-hover">
+    <tbody>
+
+
+      <tr>
+          <td style="font-weight: bold;"> Code and Type:  </td>
+          <td> SlCS343-Essential Course</td>
+      </tr>
+      <tr>
+          <td style="font-weight: bold;">Numbers Of Credits</td>
+          <td >5</td>
+      </tr>
+
+      <tr>
+          <td style="font-weight: bold;"> Pre-requisites: </td>
+          <td> Programming 1</td>
+      </tr>
+
+      
+    <tr>
+      <td style="font-weight: bold;"> Duration: </td>
+      <td> 2 months</td>
+  </tr>
+      <tr>
+          <td style="font-weight: bold;"> Description:  </td>
+          <td>  This course provides an introduction to Object Oriented Programming concepts using Python. The course emphasis is on the on the object orientated facilities  of Python and how they can be used to create modular and re-usable code. This course is to develop programming skills of students, using functions, pointers, string and object oriented programming concepts, learn the concept of class and object using C++ and develop classes for simple and complex applications.
+ 
+      </tr>
+
+      <tr>
+        <td style="font-weight: bold;"> Rating: </td>
+        <td> 
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span></td>
+    </tr>
+
+    <tr>
+      <td style="font-weight: bold;"> Pricing: </td>
+      <td> 10$/credit = 50 $</td>
+  </tr>
+
+
+
+    </tbody>
+
+    </table>
+
+
+
+
+
+
+  <h3 style="background-color: rgb(82, 186, 255);" class="mt-5"> Learning outcomes</h3>
+  <table class="table table-hover">
+    <tbody>
+
+
+      <tr>
+          <td style="font-weight: bold;"> LO#1:   </td>
+          <td> Understand the concepts of functions, pointers and classes and Recognize the concepts of object-oriented programming and basic structure of python programming. </td>
+      </tr>
+      <tr>
+          <td style="font-weight: bold;">LO#2: </td>
+          <td >Apply the principles of functions and pointers and the concepts of object-oriented design such as constructor/destructor, encapsulation, polymorphism and inheritance.</td>
+      </tr>
+
+      <tr>
+          <td style="font-weight: bold;"> LO#3:  </td>
+          <td> Design and construct python programs, by using various inheritance concepts and virtual function for given problem.</td>
+      </tr>
+
+      
+  
+      <tr>
+          <td style="font-weight: bold;"> LO#4:   </td>
+          <td>  Analyze and evaluate computer programs using the C++ programming language.</td>
+ 
+      </tr>
+
+  
+
+
+    </tbody>
+
+  </table>
+
+
+
+  <h3 style="background-color: rgb(82, 186, 255);" class="mt-5"> Course Outline</h3>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+      <th>Week</th>
+      <th> Topic</th>
+    
+    </tr>
+    </thead>
+    <tbody>
+
+
+      <tr>
+          <td style="font-weight: bold;"> 1   </td>
+          <td> Revision of Programming I: input/output, conditional statements, loops and arrays </td>
+      </tr>
+      <tr>
+          <td style="font-weight: bold;">2 </td>
+          <td >Revision of Programming I: input/output, conditional statements, loops and arrays</td>
+      </tr>
+
+      <tr>
+          <td style="font-weight: bold;"> 3  </td>
+          <td> Functions: pass-by-value , pass-by-reference, passing arrays </td>
+      </tr>
+
+      
+  
+      <tr>
+          <td style="font-weight: bold;"> 4  </td>
+          <td>  String : how to deal with string and its functions  (assignment 1)</td>
+
+      </tr>
+
+
+      
+      <tr>
+        <td style="font-weight: bold;"> 5  </td>
+        <td>  Concepts of OOP: Introduction OOP, Procedural Vs. Object Oriented Programming,  Program structure, namespace, objects and classes  (quiz 1)</td>
+
+    </tr>
+
+    
+    <tr>
+      <td style="font-weight: bold;"> 6  </td>
+      <td>  String : how to deal with string and its functions  (assignment 1)</td>
+
+  </tr>
+  
+  <tr>
+    <td style="font-weight: bold;"> 7 </td>
+    <td>  Introduction to classes _ access specifies _ private, protected and public data members, Attributes and methods</td>
+
+</tr>
+
+<tr>
+  <td style="font-weight: bold;"> 8  </td>
+  <td>  Constructors _ default constructor _ Parameterized constructors _ destructors, static data and static methods - Inheritance -Overloading</td>
+
+</tr>
+
+
+
+
+    </tbody>
+
+  </table>
+
+  <h3 style="background-color: rgb(82, 186, 255);" class="mt-5"> Evaluation Criteria</h3>
+  <table class="table table-hover">
+    <tbody>
+
+
+      <tr>
+          <td style="font-weight: bold;"> 10%   </td>
+          <td> Attendance and participation </td>
+      </tr>
+      <tr>
+          <td style="font-weight: bold;">20% </td>
+          <td >Homework, project, research paper, tests, assignment, etc.</td>
+      </tr>
+
+
+      
+  
+      <tr>
+          <td style="font-weight: bold;"> 30%   </td>
+          <td> Midterm</td>
+ 
+      </tr>
+
+  
+      <tr>
+          <td style="font-weight: bold;"> 40%  </td>
+          <td> End of semester evaluation (e.g. Final exam) or (project)</td>
+      </tr>
+
+
+    </tbody>
+
+  </table>
+
+
+
+
+  <h3 style="background-color: rgb(82, 186, 255); margin-top: 100px;" > Requirements</h3>
+  <table class="table table-hover">
+    <tbody>
+
+
+      <tr>
+          <th style="font-weight: bold;"> Required Texts </th>
+          <td> <ul>
+            <li> - “Object Oriented Programming with Python”  Balaguruswamy.</li>
+            <li>	- “Introduction to Object oriented programming in Python” by Robert Lafore</li>
+            
+          </ol> </td>
+      </tr>
+      <tr>
+          <td style="font-weight: bold;">Supplemental References </td>
+          <td> <ul>
+            <li><a href="https://www.tutorialspoint.com/python/index.htm" target="_blank"> tutorialspoint </a></li>
+            <li><a href="https://tutorialspoint.dev/language/python" target="_blank"> python  </a></li>
+            
+          </ul> </td>
+      </tr>
+
+
+      
+  
+      <tr>
+          <td style="font-weight: bold;"> Required Materials  </td>
+          <td>        Weekly Materials provided by the instructor </td>
+ 
+      </tr>
+
+  
+
+
+    </tbody>
+  </table>
+</div>
+
+
+
+<div class="container-fluid  " style="display: flex; align-items: center; justify-content: center; background-color: rgb(198, 228, 255)">
+
+  <p style="display: inline; font-size:30px; font-family: 'Bebas Neue', cursive; margin-top: 10px;"> Instructor </p>
+
+<div > 
+  
+  <div style="flex-basis: 50%;" class="img-col">
+  <img style="width: 200px; "src="images/Instructor.jfif" class="rounded-circle mt-3 p-3" alt="Cinque Terre">
+  </div>
+  
+  <div style="flex-basis: 50%;" class="text-col">
+  
+  </div>
+</div>
+    <table class="table table-hover">
+      <tbody>
+        <tr>
+<td> <b>Name:</b> </td>
+<td> Dr John Smith    </td>
+        </tr>
+
+        <tr>
+          <td> <b>Position:</b> </td>
+          <td> Programming Instructor  </td>
+                  </tr>
+
+
+                  <tr>
+                    <td> <b>Years Of experience:</b> </td>
+                    <td> 20 years    </td>
+                            </tr>
+
+                            <tr>
+                              <td> <b>Nb Of courses:</b> </td>
+                              <td> 10     </td>
+                                      </tr>
+
+                                      
+                            <tr>
+                              <td> <b>Rating:</b> </td>
+                              <td>     <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span></td>     </td>
+                                      </tr>
+</tbody>
+    </table>
+
+    
+  </div>
+
+
+  <div class="container-fluid  p-5" style="display: flex; align-items: center; justify-content: center; background-color: rgb(198, 228, 255)">
+
+<p class="text-center">   
+    Hi, I'm John! <br>
+
+I finished my Master of Science (M. Sc.) in Applied Computer Science at Ruhr-Universität Bochum in September 2000 and have been working as a Machine Learning Developer for Autonomous Driving at ZF Group since then.
+
+My interest in teaching computer science and mathematics knowledge has existed for many years. In addition to my lecturing activities on Udemy, I also run the Youtube channel with the name ""Franneck"".
+
+Especially in the area of machine learning, deep learning and Python programming I try to make you fit and show you everything important.</p>
+  </div>
+
+
+  <div class="container-fluid  p-5" style="justify-content: center; background-color: rgb(231, 244, 255)">
+
+
+    <h1 class="text-center"> <u>Reviews </u></h1> 
+
+<div class="text-center mt-5">
+  
+    <i class="bi bi-person-fill"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+    </svg><p style="display: inline; font-size: 20px;"> Joumana Makki</p>  <br>
+
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <p> The course is really interesting. It helps me developping my programming skills.</p>
+
+    <hr>
+
+    <i class="bi bi-person-fill"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+    </svg><p style="display: inline; font-size: 20px;"> Zeina Fakhri</p>  <br>
+
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star "></span>
+    <p> Assignments have been fun to complete and required me to draw knowledge from all areas of my education, had easy access to lectures I missed due to the recordings being online</p>
+
+    <hr>
+
+    <i class="bi bi-person-fill"></i>
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="30" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+    </svg><p style="display: inline; font-size: 20px;"> Youssef El Sayed Ahmad</p>  <br>
+
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked "></span>
+    <p> The course was refreshing, interactive and interesting. a good mixture of practical and theory with enough time to discuss issues.</p>
+
+    <hr>
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+    
+</div>
+    
+  <div class="container-fluid p-5" style="background-color: rgb(183, 220, 253);">
+
+
+
+    <div class="text-center ">
+
+      <div class="p-5" style="display: inline;">
+      <a href="AddCourses.html" class="btn btn-info" >Back</a> 
+     <!-- Button to Open the Modal -->
+
+     </div>
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
+Add
+</button>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+<div class="modal-dialog">
+<div class="modal-content">
+
+<!-- Modal Header -->
+<div class="modal-header">
+<h4 class="modal-title">Adding a course</h4>
+<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+
+<!-- Modal body -->
+<div class="modal-body">
+By clicking on <b> Add </b>   you are acctepting all the terms and conditions of the University in this course.
+</div>
+<!-- Modal footer -->
+<div class="modal-footer">
+<button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+</div>
+  </div>
+  
+</div>
+</div>
+</div>
+  </div>
+
+
+</body>
+</html>

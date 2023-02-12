@@ -1,0 +1,1489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ <!-- JavaScript Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="Addcourses.css">
+ <link rel="stylesheet" href="StudentStyle.css">
+    <link rel="icon" type="image/png" href="/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet">
+    
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+
+    <title>ADD Courses</title>
+
+    <style>
+      html  , body{
+        font-size: 15px;
+        line-height:1.5;
+        box-sizing: border-box;
+        margin: 0;
+        top: 0;
+        left: 0;
+       }
+       
+    
+       a {
+        text-decoration: none;
+        color: rgba(1, 2, 2, 0.7);
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+    a:hover{
+        color:hsl(240, 91%, 48%);
+    }
+    
+    ul{
+        list-style: none;
+        color: black;
+        
+    }
+    
+    .navbar{
+     background-color: white;
+     padding: 3rem 2rem ;
+     height: 0rem;
+     min-height: 12vh;
+    
+    }
+    
+    .navbar .navbar-brand a{
+        padding: 1rem 0;
+        display: block;
+        text-decoration: none;
+    }
+    
+    #fontstyle{
+        font-family: 'Playfair Display', serif;
+    }
+    
+    .btn {
+        height: 30px;
+        width: 100px;
+    }
+    </style>
+</head>
+</head>
+<body>
+  
+<div class="container-fluid" style="padding-bottom: 100px;">
+  <header class="header ">
+          
+    <nav class="navbar navbar-expand-lg  header-nav fixed-top ">
+        <div class="container-fluid">
+
+          <a class="navbar-brand" id="fontstyle" href="index.html"><img> HTU</a>
+
+     
+          <img src="/images/logo.png"  class="rounded" width="90" height="50"></a>
+          
+           
+          <button  class="btn btn-info" type="button" data-bs-toggle="offcanvas" data-bs-target="#StudentDashboard">
+            <p style="color: white;"> Username</p>
+        </button>   
+
+        </div>
+    </nav>
+  </header>
+</div>
+    
+    <!-- Offcanvas Sidebar -->
+<div class="offcanvas offcanvas-end" id="StudentDashboard">
+<div style="background-color: rgb(170, 245, 255);" class="offcanvas-header">
+<h1  class="offcanvas-title">Settings</h1>
+<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+</div>
+<div style="background-color: rgb(184, 229, 250);" class="offcanvas-body">
+ <a href="StudentDashboard.html">
+   <p>Dashboard</p>
+ </a>
+
+ <a href="AddCourses.html">
+  <p>Courses</p>
+</a>
+
+<a href="Grades.html">
+  <p>Grades</p>
+</a>
+
+
+<a href="Assignments.html">
+  <p>Assignments</p>
+</a>
+
+
+<a href="Exams.html">
+  <p>Exams</p>
+</a>
+
+
+
+ 
+<a href="Studentportal.html">
+  <p>Log out</p>
+</a>
+
+</div>
+
+</div>
+</div>
+
+<div style="background-color: aliceblue;">
+<div id="dem" class="carousel slide" data-bs-ride="carousel">
+<!-- The slideshow/carousel -->
+<div class="carousel-inner">
+           
+           
+  <div class="carousel-item active">
+  <div class="card-body p-3">
+      <div  class="container-fluid ">
+          <div class="text-center">
+        <h4 style="font-family: 'Oswald', sans-serif;"> Your Courses:  </h4></div>
+        <div class="row" >
+          
+            <div class="col-sm-3">
+              <div class="card" >
+                <img class="card-img-top"  style="height:150px;" src="/images/Course1.jpg"    alt="Web development">
+                <div class="card-body">
+                  <h6 class="card-title"><u>License :</u>Web development </h6>
+                  <p class="card-text">  Html/CSS.</p>
+                  <a href="Onlinecourse2.html" class="btn btn-info">View </a>
+                </div>
+              </div>
+                  </div>
+
+        
+                  <div class="col-sm-3">
+                    <div class="card" >
+                      <img class="card-img-top"  style="height:150px;" src="/images/Course2.jpg"    alt="Card image">
+                      <div class="card-body">
+                        <h6 class="card-title"><u>License:</u>Programming 1</h6>
+                        <p class="card-text">  Python.</p>
+                        <a href="#" class="btn btn-info">View</a>
+                      </div>
+                    </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                          <div class="card" >
+                            <img class="card-img-top" style="height:150px;" src="/images/Course3.png"    alt="Card image">
+                            <div class="card-body">
+                              <h6 class="card-title"><u>License:</u>Data Structure</h6>
+                              <p class="card-text"> With C.</p>
+                              <a href="#" class="btn btn-info">View</a>
+                            </div>
+                          </div>
+                              </div>
+
+                              <div class="col-sm-3">
+                                <div class="card">
+                                  <img class="card-img-top" style="height:150px;" src="/images/AccCourse.png" alt="High Tech Logo">
+                                  <div class="card-body">
+                                    <h6 class="card-title"><u>License:</u> Accounting </h6>
+                                    <p class="card-text"> Basics</p>
+                                    <a href="#" class="btn btn-info">View </a>
+                                  </div>
+                                </div>
+                                    </div>
+
+
+
+        </div>
+      </div>
+  </div>
+  </div>
+          
+
+          <div class="carousel-item"> 
+            <div class="card-body p-3">
+                <div  class="container-fluid ">
+                    <div class="text-center">
+                  <h4 style="font-family: 'Oswald', sans-serif;"> Your Courses:  </h4></div>
+                  <div class="row" >
+                    <div class="col-sm-3">
+                      <div class="card" >
+                        <img class="card-img-top"  style="height:150px;" src="/images/AutocadCourse.png"    alt="Web development">
+                        <div class="card-body">
+                          <h6 class="card-title"><u>License:</u> AutoCad</h6>
+                          <p class="card-text"> AC 2020.</p>
+                          <a href="#" class="btn btn-info">View </a>
+                        </div>
+                      </div>
+                          </div>
+                          <div class="col-sm-3">
+                            <div class="card" >
+                              <img class="card-img-top"  style="height:150px;" src="/images/PScourse.png"    alt="Card image">
+                              <div class="card-body">
+                                <h6 class="card-title"><u>License:</u>Photoshop</h6>
+                                <p class="card-text"> PS 22.2.1</p>
+                                <a href="#" class="btn btn-info">View</a>
+                              </div>
+                            </div>
+                                </div>
+          
+                                <div class="col-sm-3">
+                                  <div class="card" >
+                                    <img class="card-img-top"  style="height:150px;" src="/images/CalcCourse.png"    alt="Card image">
+                                    <div class="card-body">
+                                      <h6 class="card-title"><u>License:</u>Calculus</h6>
+                                      <p class="card-text"> Math 1</p>
+                                      <a href="#" class="btn btn-info">View</a>
+                                    </div>
+                                  </div>
+                                      </div>
+                        
+
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+  <!-- Left and right controls/icons -->
+  <button style="width: 20px; background-color: lightblue;" class="carousel-control-prev" type="button" data-bs-target="#dem" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button style="width: 20px; background-color: lightblue;"class="carousel-control-next" type="button" data-bs-target="#dem" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+   </div>
+</div>
+
+
+<div class="bg-info">
+<div class="mt-5">
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+           
+           
+            <div class="carousel-item active">
+            <div class="card-body p-3">
+                <div  class="container-fluid ">
+                    <div class="text-center">
+                  <h4 style="font-family: 'Oswald', sans-serif;"> Essential Courses:  </h4></div>
+                  <div class="row" >
+                    <div class="col-sm-3">
+                <div class="card">
+                  <img class="card-img-top" style="height:150px;" src="/images/Course3.png" alt="Data Structures courses">
+                  <div class="card-body">
+                    <h6 class="card-title"><u>License :</u>Data Structures  </h6>
+                    <p class="card-text"> With C.</p>
+                    <div class="text-center">
+                    <a href="#" class="btn btn-info">Details</a>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Add
+                       </button>
+                       
+                       <!-- The Modal -->
+                       <div class="modal" id="myModal">
+                         <div class="modal-dialog">
+                           <div class="modal-content">
+                       
+                             <!-- Modal Header -->
+                             <div class="modal-header">
+                               <h4 class="modal-title">Adding a course</h4>
+                               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                             </div>
+                       
+                             <!-- Modal body -->
+                             <div class="modal-body">
+                               By clicking on <b> Add </b>  you are acctepting all the terms and conditions of the University in this course.
+                             </div>
+                       
+                             <!-- Modal footer -->
+                             <div class="modal-footer">
+                               <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                             </div>
+                         </div>
+                           </div>
+                         </div>
+                       </div>
+                           </div>
+                  </div>
+               
+                    </div>
+
+                    
+                    <div class="col-sm-3">
+                        <div class="card" >
+                          <img class="card-img-top"  style="height:150px;" src="/images/Database.jfif"    alt="Web development">
+                          <div class="card-body">
+                            <h6 class="card-title"><u>License :</u>Database </h6>
+                            <p class="card-text">MSS</p>
+                            <div class="text-center">
+
+                            <a href="#" class="btn btn-info">Details</a>
+
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
+                                Add
+                               </button>
+                               
+                               <!-- The Modal -->
+                               <div class="modal" id="myModal">
+                                 <div class="modal-dialog">
+                                   <div class="modal-content">
+                               
+                                     <!-- Modal Header -->
+                                     <div class="modal-header">
+                                       <h4 class="modal-title">Adding a course</h4>
+                                       <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                     </div>
+                               
+                                     <!-- Modal body -->
+                                     <div class="modal-body">
+                                       By clicking on <b> Add </b>  you are acctepting all the terms and conditions of the University in this course.
+                                     </div>
+                               
+                                     <!-- Modal footer -->
+                                     <div class="modal-footer">
+                                       <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                                     </div>
+                                 </div>
+                                   </div>
+                                 </div>
+                               </div>
+                                   </div>
+                            
+                          </div>
+                       </div>
+                          
+            
+                          <div class="col-sm-3">
+                            <div class="card" >
+                              <img class="card-img-top"  style="height:150px;" src="/images/Course1.jpg"    alt="Web development">
+                              <div class="card-body">
+                                <h6 class="card-title"><u>License :</u>Web development </h6>
+                                <p class="card-text">  Html/CSS.</p>
+                                <div class="text-center">
+
+                                <a href="#" class="btn btn-info">Details </a>
+
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
+                                    Add
+                                   </button>
+                                   
+                                   <!-- The Modal -->
+                                   <div class="modal" id="myModal">
+                                     <div class="modal-dialog">
+                                       <div class="modal-content">
+                                   
+                                         <!-- Modal Header -->
+                                         <div class="modal-header">
+                                           <h4 class="modal-title">Adding a course</h4>
+                                           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                         </div>
+                                   
+                                         <!-- Modal body -->
+                                         <div class="modal-body">
+                                           By clicking on <b> Add </b>  you are acctepting all the terms and conditions of the University in this course.
+                                         </div>
+                                   
+                                         <!-- Modal footer -->
+                                         <div class="modal-footer">
+                                           <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                                         </div>
+                                     </div>
+                                       </div>
+                                     </div>
+                                   </div>
+                                       </div>
+                                
+                              </div>
+                           </div>
+                              
+                                
+                          <div class="col-sm-3">
+                            <div class="card" >
+                              <img class="card-img-top"  style="height: 150px;" src="/images/Course2.jpg"    alt="Card image">
+                              <div class="card-body">
+                                <h6 class="card-title"><u>License:</u>Programming 2</h6>
+                                <p class="card-text">  Python.</p>
+                               <div class="text-center">
+                                <a href="CoursesDetail.html" class="btn btn-info">Details</a> 
+                               <!-- Button to Open the Modal -->
+            
+                               
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">
+               Add
+              </button>
+              
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Adding a course</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      By clicking on <b> Add </b>   you are acctepting all the terms and conditions of the University in this course.
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                    </div>
+                </div>
+                  </div>
+                </div>
+              </div>
+                  </div>
+                </div>
+            </div>
+            
+                                
+                        
+                  </div>
+                </div>
+                </div>
+            
+          </div>
+         
+         
+         
+         
+        
+<!-- Here is the second item-->
+
+          <div class="carousel-item">
+           
+            
+                <div class="card-body p-3">
+                    <div  class="container-fluid ">
+                        <div class="text-center">
+                      <h4 style="font-family: 'Oswald', sans-serif;"> Essential Courses:  </h4></div>
+                      <div class="row" >
+                        <div class="col-sm-3">
+                    <div class="card">
+                      <img class="card-img-top" style="height:150px;" src="/images/phpCourse.png" alt="php course">
+                      <div class="card-body">
+                        <h6 class="card-title"><u>License:</u>Php </h6>
+                        <p class="card-text"> Php and mySQL</p>
+                        <div class="text-center">
+                        <a href="#" class="btn btn-info">Details</a>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal2">
+                            Add
+                           </button>
+                           
+                           <!-- The Modal -->
+                           <div class="modal" id="myModal2">
+                             <div class="modal-dialog">
+                               <div class="modal-content">
+                           
+                                 <!-- Modal Header -->
+                                 <div class="modal-header">
+                                   <h4 class="modal-title">Adding a course</h4>
+                                   <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                 </div>
+                           
+                                 <!-- Modal body -->
+                                 <div class="modal-body">
+                                   By clicking on <b> Add </b>  you are acctepting all the terms and conditions of the University in this course.
+                                 </div>
+                           
+                                 <!-- Modal footer -->
+                                 <div class="modal-footer">
+                                   <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                                 </div>
+                             </div>
+                               </div>
+                             </div>
+                           </div>
+                               </div>
+                      </div>
+                   
+                        </div>
+
+                                 
+                              <div class="col-sm-3">
+                                <div class="card" >
+                                  <img class="card-img-top"  style="height:150px;" src="/images/Oracle.png"    alt="Web development">
+                                  <div class="card-body">
+                                    <h6 class="card-title"><u>License :</u> Database </h6>
+                                    <p class="card-text"> Oracle</p>
+                                    <div class="text-center">
+    
+                                    <a href="#" class="btn btn-info">Details </a>
+    
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal2">
+                                        Add
+                                       </button>
+                                       
+                                       <!-- The Modal -->
+                                       <div class="modal" id="myModal2">
+                                         <div class="modal-dialog">
+                                           <div class="modal-content">
+                                       
+                                             <!-- Modal Header -->
+                                             <div class="modal-header">
+                                               <h4 class="modal-title">Adding a course</h4>
+                                               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                             </div>
+                                       
+                                             <!-- Modal body -->
+                                             <div class="modal-body">
+                                               By clicking on <b> Add </b>  you are acctepting all the terms and conditions of the University in this course.
+                                             </div>
+                                       
+                                             <!-- Modal footer -->
+                                             <div class="modal-footer">
+                                               <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                                             </div>
+                                         </div>
+                                           </div>
+                                         </div>
+                                       </div>
+                                           </div>
+                                    
+                                  </div>
+                               </div>
+                               <div class="col-sm-3">
+                                <div class="card" >
+                                  <img class="card-img-top"  style="height:150px;" src="/images/ML.png"    alt="Machine learning">
+                                  <div class="card-body">
+                                    <h6 class="card-title"><u>License:</u>Machinelearning </h6>
+                                    <p class="card-text"> With Python</p>
+                                    <div class="text-center">
+    
+                                    <a href="#" class="btn btn-info">Details </a>
+    
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal2">
+                                        Add
+                                       </button>
+                                       
+                                       <!-- The Modal -->
+                                       <div class="modal" id="myModal2">
+                                         <div class="modal-dialog">
+                                           <div class="modal-content">
+                                       
+                                             <!-- Modal Header -->
+                                             <div class="modal-header">
+                                               <h4 class="modal-title">Adding a course</h4>
+                                               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                             </div>
+                                       
+                                             <!-- Modal body -->
+                                             <div class="modal-body">
+                                               By clicking on <b> Add </b> you are acctepting all the terms and conditions of the University in this course.
+                                             </div>
+                                       
+                                             <!-- Modal footer -->
+                                             <div class="modal-footer">
+                                               <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                                             </div>
+                                         </div>
+                                           </div>
+                                         </div>
+                                       </div>
+                                           </div>
+                                    
+                                  </div>
+                               </div>
+                                    
+                              <div class="col-sm-3">
+                                <div class="card" >
+                                  <img class="card-img-top"  style="height: 150px;" src="/images/C++.png"    alt="Card image">
+                                  <div class="card-body">
+                                    <h6 class="card-title"><u>License:</u>Programming 1</h6>
+                                    <p class="card-text">  Python.</p>
+                                   <div class="text-center">
+                                    <a href="#" class="btn btn-info">Details</a> 
+                                   <!-- Button to Open the Modal -->
+                
+                                   
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal2">
+                   Add
+                  </button>
+                  
+                  <!-- The Modal -->
+                  <div class="modal" id="myModal2">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                  
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Adding a course</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                  
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                          By clicking on <b> Add </b>  you are acctepting all the terms and conditions of the University in this course.
+                        </div>
+                  
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                        </div>
+                    </div>
+                      </div>
+                    </div>
+                  </div>
+                      </div>
+                    </div>
+                </div>
+                
+                                    
+                            
+                      </div>
+                    </div>
+                    </div>
+                
+              </div>
+                    </div>
+             
+           
+        <!-- Left and right controls/icons -->
+        <button style="width: 20px; background-color: lightblue;" class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button style="width: 20px; background-color: lightblue;"class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+
+
+               
+
+
+</div>
+
+
+
+
+      <div id="demo1" class="carousel slide mt-5" data-bs-ride="carousel">
+
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+           
+           
+            <div class="carousel-item active">
+            <div class="card-body p-3">
+                <div  class="container-fluid ">
+                    <div class="text-center">
+                  <h4 style="font-family: 'Oswald', sans-serif;"> Math-Physics Courses:  </h4></div>
+                  <div class="row" >
+                    <div class="col-sm-3">
+                <div class="card">
+                  <img class="card-img-top" style="height:150px;" src="/images/LA.png" alt="Data Structures courses">
+                  <div class="card-body">
+                    <h6 class="card-title"><u>License:</u>LinearAlgebra  </h6>
+                    <p class="card-text"> Math 1</p>
+                    <div class="text-center">
+                    <a href="#" class="btn btn-info">Details</a>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal3">
+                        Add
+                       </button>
+                       
+                       <!-- The Modal -->
+                       <div class="modal" id="myModal3">
+                         <div class="modal-dialog">
+                           <div class="modal-content">
+                       
+                             <!-- Modal Header -->
+                             <div class="modal-header">
+                               <h4 class="modal-title">Adding a course</h4>
+                               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                             </div>
+                       
+                             <!-- Modal body -->
+                             <div class="modal-body">
+                               By clicking on <b> Add </b>  you are acctepting all the terms and conditions of the University in this course.
+                             </div>
+                       
+                             <!-- Modal footer -->
+                             <div class="modal-footer">
+                               <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                             </div>
+                         </div>
+                           </div>
+                         </div>
+                       </div>
+                           </div>
+                  </div>
+               
+                    </div>
+
+                    
+                    <div class="col-sm-3">
+                        <div class="card" >
+                          <img class="card-img-top"  style="height:150px;" src="/images/CalcCourse.png"    alt="Web development">
+                          <div class="card-body">
+                            <h6 class="card-title"><u>License :</u>Calculus </h6>
+                            <p class="card-text">Math 1</p>
+                            <div class="text-center">
+
+                            <a href="#" class="btn btn-info">Details</a>
+
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal3">
+                                Add
+                               </button>
+                               
+                               <!-- The Modal -->
+                               <div class="modal" id="myModal3">
+                                 <div class="modal-dialog">
+                                   <div class="modal-content">
+                               
+                                     <!-- Modal Header -->
+                                     <div class="modal-header">
+                                       <h4 class="modal-title">Adding a course</h4>
+                                       <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                     </div>
+                               
+                                     <!-- Modal body -->
+                                     <div class="modal-body">
+                                       By clicking on <b> Add </b>  you are acctepting all the terms and conditions of the University in this course.
+                                     </div>
+                               
+                                     <!-- Modal footer -->
+                                     <div class="modal-footer">
+                                       <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                                     </div>
+                                 </div>
+                                   </div>
+                                 </div>
+                               </div>
+                                   </div>
+                            
+                          </div>
+                       </div>
+                          
+            
+                          <div class="col-sm-3">
+                            <div class="card" >
+                              <img class="card-img-top"  style="height:150px;" src="/images/DiscreteMath.gif"    alt="Web development">
+                              <div class="card-body">
+                                <h6 class="card-title"><u>License:</u>DiscreteMath </h6>
+                                <p class="card-text">  CS Math.</p>
+                                <div class="text-center">
+
+                                <a href="#" class="btn btn-info">Details </a>
+
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal3">
+                                    Add
+                                   </button>
+                                   
+                                   <!-- The Modal -->
+                                   <div class="modal" id="myModal3">
+                                     <div class="modal-dialog">
+                                       <div class="modal-content">
+                                   
+                                         <!-- Modal Header -->
+                                         <div class="modal-header">
+                                           <h4 class="modal-title">Adding a course</h4>
+                                           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                         </div>
+                                   
+                                         <!-- Modal body -->
+                                         <div class="modal-body">
+                                           By clicking on <b> Add </b>  you are acctepting all the terms and conditions of the University in this course.
+                                         </div>
+                                   
+                                         <!-- Modal footer -->
+                                         <div class="modal-footer">
+                                           <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                                         </div>
+                                     </div>
+                                       </div>
+                                     </div>
+                                   </div>
+                                       </div>
+                                
+                              </div>
+                           </div>
+                              
+                                
+                          <div class="col-sm-3">
+                            <div class="card" >
+                              <img class="card-img-top"  style="height: 150px;" src="/images/physics.jpg"    alt="Card image">
+                              <div class="card-body">
+                                <h6 class="card-title"><u>License:</u>Physics</h6>
+                                <p class="card-text">  Physics 1</p>
+                               <div class="text-center">
+                                <a href="#" class="btn btn-info">Details</a> 
+                               <!-- Button to Open the Modal -->
+            
+                               
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal3">
+               Add
+              </button>
+              
+              <!-- The Modal -->
+              <div class="modal" id="myModal3">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Adding a course</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      By clicking on <b> Add </b> you are acctepting all the terms and conditions of the University in this course.
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                    </div>
+                </div>
+                  </div>
+                </div>
+              </div>
+                  </div>
+                </div>
+            </div>
+            
+                                
+                        
+                  </div>
+                </div>
+                </div>
+            
+          </div>
+         
+         
+         
+         
+        
+<!-- Here is the second item-->
+
+          <div class="carousel-item">
+           
+            
+                <div class="card-body p-3">
+                    <div  class="container-fluid ">
+                        <div class="text-center">
+                      <h4 style="font-family: 'Oswald', sans-serif;"> Math_Physics Courses:  </h4></div>
+                      <div class="row" >
+                        <div class="col-sm-3">
+                    <div class="card">
+                      <img class="card-img-top" style="height:150px;" src="/images/Calc2.jfif" alt="Calculus course">
+                      <div class="card-body">
+                        <h6 class="card-title"><u>License:</u>Calculus2 </h6>
+                        <p class="card-text"> Math 2</p>
+                        <div class="text-center">
+                        <a href="#" class="btn btn-info">Details</a>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal4">
+                            Add
+                           </button>
+                           
+                           <!-- The Modal -->
+                           <div class="modal" id="myModal4">
+                             <div class="modal-dialog">
+                               <div class="modal-content">
+                           
+                                 <!-- Modal Header -->
+                                 <div class="modal-header">
+                                   <h4 class="modal-title">Adding a course</h4>
+                                   <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                 </div>
+                           
+                                 <!-- Modal body -->
+                                 <div class="modal-body">
+                                   By clicking on <b> Add </b>  you are acctepting all the terms and conditions of the University in this course.
+                                 </div>
+                           
+                                 <!-- Modal footer -->
+                                 <div class="modal-footer">
+                                   <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                                 </div>
+                             </div>
+                               </div>
+                             </div>
+                           </div>
+                               </div>
+                      </div>
+                   
+                        </div>
+
+                                 
+                              <div class="col-sm-3">
+                                <div class="card" >
+                                  <img class="card-img-top"  style="height:150px;" src="/images/Logic design.png"    alt="Logic design">
+                                  <div class="card-body">
+                                    <h6 class="card-title"><u>License :</u> Logic design </h6>
+                                    <p class="card-text"> Math CS</p>
+                                    <div class="text-center">
+    
+                                    <a href="#" class="btn btn-info">Details </a>
+    
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal4">
+                                        Add
+                                       </button>
+                                       
+                                       <!-- The Modal -->
+                                       <div class="modal" id="myModal4">
+                                         <div class="modal-dialog">
+                                           <div class="modal-content">
+                                       
+                                             <!-- Modal Header -->
+                                             <div class="modal-header">
+                                               <h4 class="modal-title">Adding a course</h4>
+                                               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                             </div>
+                                       
+                                             <!-- Modal body -->
+                                             <div class="modal-body">
+                                               By clicking on <b> Add </b>  you are acctepting all the terms and conditions of the University in this course.
+                                             </div>
+                                       
+                                             <!-- Modal footer -->
+                                             <div class="modal-footer">
+                                               <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                                             </div>
+                                         </div>
+                                           </div>
+                                         </div>
+                                       </div>
+                                           </div>
+                                    
+                                  </div>
+                               </div>
+                               <div class="col-sm-3">
+                                <div class="card" >
+                                  <img class="card-img-top"  style="height:150px;" src="/images/Proba.jfif"    alt="Probability">
+                                  <div class="card-body">
+                                    <h6 class="card-title"><u>License :</u> Probability</h6>
+                                    <p class="card-text"> Math 2</p>
+                                    <div class="text-center">
+    
+                                    <a href="#" class="btn btn-info">Details </a>
+    
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal4">
+                                        Add
+                                       </button>
+                                       
+                                       <!-- The Modal -->
+                                       <div class="modal" id="myModal4">
+                                         <div class="modal-dialog">
+                                           <div class="modal-content">
+                                       
+                                             <!-- Modal Header -->
+                                             <div class="modal-header">
+                                               <h4 class="modal-title">Adding a course</h4>
+                                               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                             </div>
+                                       
+                                             <!-- Modal body -->
+                                             <div class="modal-body">
+                                               By clicking on <b> Add </b>  you are acctepting all the terms and conditions of the University in this course.
+                                             </div>
+                                       
+                                             <!-- Modal footer -->
+                                             <div class="modal-footer">
+                                               <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                                             </div>
+                                         </div>
+                                           </div>
+                                         </div>
+                                       </div>
+                                           </div>
+                                    
+                                  </div>
+                               </div>
+                                    
+                              <div class="col-sm-3">
+                                <div class="card" >
+                                  <img class="card-img-top"  style="height: 150px;" src="/images/Physics2.gif"    alt="Card image">
+                                  <div class="card-body">
+                                    <h6 class="card-title"><u>License:</u>Physics</h6>
+                                    <p class="card-text">  Physics 2</p>
+                                   <div class="text-center">
+                                    <a href="#" class="btn btn-info">Details</a> 
+                                   <!-- Button to Open the Modal -->
+                
+                                   
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal4">
+                   Add
+                  </button>
+                  
+                  <!-- The Modal -->
+                  <div class="modal" id="myModal4">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                  
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Adding a course</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                  
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                          By clicking on <b> Add </b>  you are acctepting all the terms and conditions of the University in this course.
+                        </div>
+                  
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                        </div>
+                    </div>
+                      </div>
+                    </div>
+                  </div>
+                      </div>
+                    </div>
+                </div>
+                
+                                    
+                            
+                      </div>
+                    </div>
+                    </div>
+                
+              </div>
+                    </div>
+             
+           
+        <!-- Left and right controls/icons -->
+        <button style="width: 20px; background-color: lightblue;" class="carousel-control-prev" type="button" data-bs-target="#demo1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button style="width: 20px; background-color: lightblue;"class="carousel-control-next" type="button" data-bs-target="#demo1" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+
+
+
+
+
+
+      <div id="demo2" class="carousel slide mt-5" data-bs-ride="carousel">
+
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+           
+           
+            <div class="carousel-item active">
+            <div class="card-body p-3">
+                <div  class="container-fluid ">
+                    <div class="text-center">
+                  <h4 style="font-family: 'Oswald', sans-serif;"> Elective Courses:  </h4></div>
+                  <div class="row" >
+                    <div class="col-sm-3">
+                <div class="card">
+                  <img class="card-img-top" style="height:150px;" src="/images/AccCourse.png" alt="Data Structures courses">
+                  <div class="card-body">
+                    <h6 class="card-title"><u>License :</u>Accounting  </h6>
+                    <p class="card-text"> Baics </p>
+                    <div class="text-center">
+                    <a href="#" class="btn btn-info">Details</a>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal6">
+                        Add
+                       </button>
+                       
+                       <!-- The Modal -->
+                       <div class="modal" id="myModal6">
+                         <div class="modal-dialog">
+                           <div class="modal-content">
+                       
+                             <!-- Modal Header -->
+                             <div class="modal-header">
+                               <h4 class="modal-title">Adding a course</h4>
+                               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                             </div>
+                       
+                             <!-- Modal body -->
+                             <div class="modal-body">
+                               By clicking on <b> Add </b>  you are acctepting all the terms and conditions of the University in this course.
+                             </div>
+                       
+                             <!-- Modal footer -->
+                             <div class="modal-footer">
+                               <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                             </div>
+                         </div>
+                           </div>
+                         </div>
+                       </div>
+                           </div>
+                  </div>
+               
+                    </div>
+
+                    
+                    <div class="col-sm-3">
+                        <div class="card" >
+                          <img class="card-img-top"  style="height:150px;" src="/images/AutocadCourse.png"    alt="Web development">
+                          <div class="card-body">
+                            <h6 class="card-title"><u>License :</u>Autocad </h6>
+                            <p class="card-text">AC.22.2</p>
+                            <div class="text-center">
+
+                            <a href="#" class="btn btn-info">Details</a>
+
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal6">
+                                Add
+                               </button>
+                               
+                               <!-- The Modal -->
+                               <div class="modal" id="myModal6">
+                                 <div class="modal-dialog">
+                                   <div class="modal-content">
+                               
+                                     <!-- Modal Header -->
+                                     <div class="modal-header">
+                                       <h4 class="modal-title">Adding a course</h4>
+                                       <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                     </div>
+                               
+                                     <!-- Modal body -->
+                                     <div class="modal-body">
+                                       By clicking on <b> Add </b>  you are acctepting all the terms and conditions of the University in this course.
+                                     </div>
+                               
+                                     <!-- Modal footer -->
+                                     <div class="modal-footer">
+                                       <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                                     </div>
+                                 </div>
+                                   </div>
+                                 </div>
+                               </div>
+                                   </div>
+                            
+                          </div>
+                       </div>
+                          
+            
+                          <div class="col-sm-3">
+                            <div class="card" >
+                              <img class="card-img-top"  style="height:150px;" src="/images/PScourse.png"    alt="Web development">
+                              <div class="card-body">
+                                <h6 class="card-title"><u>License :</u>Photoshop </h6>
+                                <p class="card-text">  PS 2022</p>
+                                <div class="text-center">
+
+                                <a href="#" class="btn btn-info">Details </a>
+
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal6">
+                                    Add
+                                   </button>
+                                   
+                                   <!-- The Modal -->
+                                   <div class="modal" id="myModal6">
+                                     <div class="modal-dialog">
+                                       <div class="modal-content">
+                                   
+                                         <!-- Modal Header -->
+                                         <div class="modal-header">
+                                           <h4 class="modal-title">Adding a course</h4>
+                                           <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                         </div>
+                                   
+                                         <!-- Modal body -->
+                                         <div class="modal-body">
+                                           By clicking on <b> Add </b>  you are acctepting all the terms and conditions of the University in this course.
+                                         </div>
+                                   
+                                         <!-- Modal footer -->
+                                         <div class="modal-footer">
+                                           <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                                         </div>
+                                     </div>
+                                       </div>
+                                     </div>
+                                   </div>
+                                       </div>
+                                
+                              </div>
+                           </div>
+                              
+                                
+                          <div class="col-sm-3">
+                            <div class="card" >
+                              <img class="card-img-top"  style="height: 150px;" src="/images/Marketing.jfif"    alt="Card image">
+                              <div class="card-body">
+                                <h6 class="card-title"><u>License:</u>Marketing</h6>
+                                <p class="card-text">  Business</p>
+                               <div class="text-center">
+                                <a href="#" class="btn btn-info">Details</a> 
+                               <!-- Button to Open the Modal -->
+            
+                               
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal6">
+               Add
+              </button>
+              
+              <!-- The Modal -->
+              <div class="modal" id="myModal6">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Adding a course</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      By clicking on <b> Add </b>  you are acctepting all the terms and conditions of the University in this course.
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                    </div>
+                </div>
+                  </div>
+                </div>
+              </div>
+                  </div>
+                </div>
+            </div>
+            
+                                
+                        
+                  </div>
+                </div>
+                </div>
+            
+          </div>
+         
+         
+         
+         
+        
+<!-- Here is the second item-->
+
+          <div class="carousel-item">
+           
+            
+                <div class="card-body p-3">
+                    <div  class="container-fluid ">
+                        <div class="text-center">
+                      <h4 style="font-family: 'Oswald', sans-serif;"> Elective Courses:  </h4></div>
+                      <div class="row" >
+                        <div class="col-sm-3">
+                    <div class="card">
+                      <img class="card-img-top" style="height:150px;" src="/images/Management.jfif" alt="Calculus course">
+                      <div class="card-body">
+                        <h6 class="card-title"><u>License:</u>Management </h6>
+                        <p class="card-text"> Business</p>
+                        <div class="text-center">
+                        <a href="#" class="btn btn-info">Details</a>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal5">
+                            Add
+                           </button>
+                           
+                           <!-- The Modal -->
+                           <div class="modal" id="myModal5">
+                             <div class="modal-dialog">
+                               <div class="modal-content">
+                           
+                                 <!-- Modal Header -->
+                                 <div class="modal-header">
+                                   <h4 class="modal-title">Adding a course</h4>
+                                   <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                 </div>
+                           
+                                 <!-- Modal body -->
+                                 <div class="modal-body">
+                                   By clicking on <b> Add </b>  you are acctepting all the terms and conditions of the University in this course.
+                                 </div>
+                           
+                                 <!-- Modal footer -->
+                                 <div class="modal-footer">
+                                   <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                                 </div>
+                             </div>
+                               </div>
+                             </div>
+                           </div>
+                               </div>
+                      </div>
+                   
+                        </div>
+
+                                 
+                              <div class="col-sm-3">
+                                <div class="card" >
+                                  <img class="card-img-top"  style="height:150px;" src="/images/XD.jfif"    alt="Adobe XD">
+                                  <div class="card-body">
+                                    <h6 class="card-title"><u>License :</u> Adobe XD</h6>
+                                    <p class="card-text"> Software</p>
+                                    <div class="text-center">
+    
+                                    <a href="#" class="btn btn-info">Details </a>
+    
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal5">
+                                        Add
+                                       </button>
+                                       
+                                       <!-- The Modal -->
+                                       <div class="modal" id="myModal5">
+                                         <div class="modal-dialog">
+                                           <div class="modal-content">
+                                       
+                                             <!-- Modal Header -->
+                                             <div class="modal-header">
+                                               <h4 class="modal-title">Adding a course</h4>
+                                               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                             </div>
+                                       
+                                             <!-- Modal body -->
+                                             <div class="modal-body">
+                                               By clicking on <b> Add </b>  you are acctepting all the terms and conditions of the University in this course.
+                                             </div>
+                                       
+                                             <!-- Modal footer -->
+                                             <div class="modal-footer">
+                                               <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                                             </div>
+                                         </div>
+                                           </div>
+                                         </div>
+                                       </div>
+                                           </div>
+                                    
+                                  </div>
+                               </div>
+                               <div class="col-sm-3">
+                                <div class="card" >
+                                  <img class="card-img-top"  style="height:150px;" src="/images/Cam.png"    alt="Probability">
+                                  <div class="card-body">
+                                    <h6 class="card-title"><u>License :</u> Photography</h6>
+                                    <p class="card-text"> Photography</p>
+                                    <div class="text-center">
+    
+                                    <a href="#" class="btn btn-info">Details </a>
+    
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal5">
+                                        Add
+                                       </button>
+                                       
+                                       <!-- The Modal -->
+                                       <div class="modal" id="myModal5">
+                                         <div class="modal-dialog">
+                                           <div class="modal-content">
+                                       
+                                             <!-- Modal Header -->
+                                             <div class="modal-header">
+                                               <h4 class="modal-title">Adding a course</h4>
+                                               <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                             </div>
+                                       
+                                             <!-- Modal body -->
+                                             <div class="modal-body">
+                                               By clicking on <b> Add </b>  you are acctepting all the terms and conditions of the University in this course.
+                                             </div>
+                                       
+                                             <!-- Modal footer -->
+                                             <div class="modal-footer">
+                                               <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                                             </div>
+                                         </div>
+                                           </div>
+                                         </div>
+                                       </div>
+                                           </div>
+                                    
+                                  </div>
+                               </div>
+                                    
+                              <div class="col-sm-3">
+                                <div class="card" >
+                                  <img class="card-img-top"  style="height: 150px;" src="/images/Eng.png"    alt="Card image">
+                                  <div class="card-body">
+                                    <h6 class="card-title"><u>License :</u> Skills</h6>
+                                    <p class="card-text">  English</p>
+                                   <div class="text-center">
+                                    <a href="#" class="btn btn-info">Details</a> 
+                                   <!-- Button to Open the Modal -->
+                
+                                   
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal5">
+                   Add
+                  </button>
+                  
+                  <!-- The Modal -->
+                  <div class="modal" id="myModal5">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                  
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Adding a course</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                  
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                          By clicking on <b> Add </b>  you are acctepting all the terms and conditions of the University in this course.
+                        </div>
+                  
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+                        </div>
+                    </div>
+                      </div>
+                    </div>
+                  </div>
+                      </div>
+                    </div>
+                </div>
+                
+                                    
+                            
+                      </div>
+                    </div>
+                    </div>
+                
+              </div>
+                    </div>
+             
+           
+        <!-- Left and right controls/icons -->
+        <button style="width: 20px; background-color: lightblue;" class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button style="width: 20px; background-color: lightblue;"class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+       
+
+      <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2022 Copyright:
+        <a class="text-reset fw-bold" href="index.html">High Tech University</a>
+      </div>
+
+</body>
+
+</html>

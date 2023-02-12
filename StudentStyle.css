@@ -1,0 +1,49 @@
+html  , body{
+    font-size: 15px;
+    line-height:1.5;
+    box-sizing: border-box;
+    margin: 0;
+    top: 0;
+    left: 0;
+   }
+   
+
+   a {
+    text-decoration: none;
+    color: rgba(1, 2, 2, 0.7);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+a:hover{
+    color:hsl(240, 91%, 48%);
+}
+
+ul{
+    list-style: none;
+    color: black;
+    
+}
+
+.navbar{
+ background-color: white;
+ padding: 3rem 2rem ;
+ height: 0rem;
+ min-height: 12vh;
+
+}
+
+.navbar .navbar-brand a{
+    padding: 1rem 0;
+    display: block;
+    text-decoration: none;
+}
+
+#fontstyle{
+    font-family: 'Playfair Display', serif;
+}
+
+.btn {
+    height: 30px;
+    width: 100px;
+}
